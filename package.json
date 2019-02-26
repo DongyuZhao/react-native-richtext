@@ -1,0 +1,48 @@
+{
+    "name": "react-native-richtext",
+    "description": "A component that could render the text features from https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/text-features",
+    "version": "0.1.16",
+    "repository": {
+        "url": "git+https://github.com/DongyuZhao/react-native-richtext",
+        "type": "git"
+    },
+    "author": "Dongyu Zhao",
+    "private": false,
+    "files": [
+        "dist/"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+        "pre-commit": "yarn build",
+        "devtools": "react-devtools",
+        "build": "gulp",
+        "src": "yarn"
+    },
+    "pre-commit": {
+        "run": [
+            "pre-commit"
+        ],
+        "silent": true
+    },
+    "devDependencies": {
+        "@types/react": "^16.8.5",
+        "@types/react-native": "^0.57.38",
+        "@types/xmldom": "^0.1.29",
+        "del": "latest",
+        "gulp": "^4.0.0",
+        "gulp-imagemin": "latest",
+        "gulp-rename": "^1.4.0",
+        "gulp-tslint": "latest",
+        "gulp-typescript": "latest",
+        "react-devtools": "^3.6.0",
+        "run-sequence": "latest",
+        "tslint": "^5.13.0",
+        "typescript": "^3.3.3333"
+    },
+    "peerDependencies": {
+        "react": "16.6.3",
+        "react-native": "^0.58.5"
+    }
+}
